@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Welcome to Travel Form</title>
+    <link rel="stylesheet" href="regform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+        <h1>Welcome to Indian adventure Trip Form</h1>
+        <p>Enter your details and submit this form to confirm your participation in the trip</p> <br>
+        </div>
+
+    <form action="regform.php" method="post" class="form">
+        <input type="text" name="name" id="name" placeholder="Enter your Full Name "> 
+        <input type="text" name="age" id="age" placeholder="Enter your age"> 
+        <input type="text" name="gender" id="gender" placeholder="Specify yourself"> 
+        <input type="email" name="email" id="email" placeholder="Enter your email"> 
+        <input type="phone" name="phone" id="phone" placeholder="Enter your phone number"> 
+        <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any queries here"></textarea> 
+        <span><button class="btn submit"> Submit </button>
+        <button class="btn reset" type="reset" value="Reset"> Reset </button></span>
+    </form>
+    </div>
+    <script src="regform.js"></script>
+<!-- 
+    INSERT INTO `trip` (`sno`, `name`, `age`, `gender`, `email`, `phone`, `queries`, `dt`) VALUES ('1', 'testName', '21', 'female', 'abc@gmail.com', '9000000091', 'Type queries', current_timestamp()); -->
+
+</body>
+</html>
